@@ -51,3 +51,10 @@
 .btn-primary:hover {
   background-color: #0056b3;
 }
+
+.no-products {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #666;
+  margin-top: 20px;
+}

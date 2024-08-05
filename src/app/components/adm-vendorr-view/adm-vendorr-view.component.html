@@ -1,0 +1,12 @@
+<div class="vendor-card">
+    <div class="vendor-details">
+      <h2>{{ vendorDetails?.username }}</h2>
+      <p><strong>Email:</strong> {{ vendorDetails?.email }}</p>
+      <p><strong>{{ vendorDetails?.isApproved }}</strong></p>
+    </div>
+    <div class="vendor-actions">
+      <button class="approve-button" (click)="approveVendor()">Approve</button>
+      <button class="reject-button" (click)="rejectVendor()">Reject</button>
+    </div>
+  </div>
+  

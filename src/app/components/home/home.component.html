@@ -1,0 +1,18 @@
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Products</span>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="product-list mt-3">
+        <div class="card" *ngFor="let product of products" style="width: 18rem;">
+          <img [src]="getProductImage(product.image)" class="card-img-top" alt="product image">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.title }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <a [routerLink]="['/product', product.id]" class="btn btn-primary">View Product</a>
+          </div>
+        </div>
+      </div>      
+</div>

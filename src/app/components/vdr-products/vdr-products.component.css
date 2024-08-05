@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1px;
+}
+
+.products-title {
+    margin: 0;
+}
+
+.addpro {
+    margin-left: auto;
+}

@@ -1,0 +1,39 @@
+<div class="login-container">
+    <div class="login-box">
+        <h2>Add Product</h2>
+        <form [formGroup]="addProForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <mat-form-field class="login-form" appearance="outline">
+                    <mat-label>Title</mat-label>
+                    <input formControlName="title" type="text" matInput placeholder="Enter product title">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="login-form" appearance="outline">
+                    <mat-label>Description</mat-label>
+                    <textarea formControlName="description" matInput placeholder="Enter product description"></textarea>
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="login-form" appearance="outline">
+                    <mat-label>Price</mat-label>
+                    <input formControlName="price" type="number" matInput placeholder="Enter product price">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="login-form" appearance="outline">
+                    <mat-label>Quantity</mat-label>
+                    <input formControlName="quantity" type="number" matInput placeholder="Enter product quantity">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <label for="image"></label>
+                <input id="image" type="file" (change)="onFileChange($event)">
+            </div>
+            <button type="submit" class="login-button">Add Product</button>
+            <div class="mt-2">
+                <p><strong>Already added?</strong><a class="mx-1" routerLink="/vendor/nav/product">Go to Products</a></p>
+            </div>
+        </form>
+    </div>
+</div>

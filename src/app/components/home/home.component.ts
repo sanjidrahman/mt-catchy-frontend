@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   getProductImage(file: string) {
-    return `http://localhost:3000/file/${file}`
+    return `https://catchy-jzml.onrender.com/file/${file}`
   }
 
   ngOnDestroy(): void {
